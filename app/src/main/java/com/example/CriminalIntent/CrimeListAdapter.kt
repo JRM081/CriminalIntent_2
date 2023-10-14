@@ -1,8 +1,6 @@
 package com.example.CriminalIntent
 
-import android.app.LauncherActivity.ListItem
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
@@ -37,26 +35,6 @@ class CrimeViewHolder(
         }
     }
 }
-
-
-/*class PoliceRequiredCrimeHolder(
-    private val binding: ListItemCrimePoliceRequiredBinding
-) : RecyclerView.ViewHolder(binding.root) {
-    fun bind(crime: Crime) {
-        // Bind your views specific to the police required layout here
-        binding.crimeTitle.text = crime.title
-        binding.crimeDate.text = crime.date.toString()
-
-        binding.root.setOnClickListener {
-            // Add specific behavior for police required layout here
-            Toast.makeText(
-                binding.root.context,
-                "${crime.title} clicked! (Police Required)",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-    }
-}*/
 
 
 class CrimeListAdapter(
